@@ -1,0 +1,117 @@
+{
+  "groups": [
+    {
+      "name": "Languages",
+      "items": [
+        "Java",
+        "Python",
+        "Kotlin",
+        "C++",
+        "JavaScript",
+        "TypeScript",
+        "SQL"
+      ]
+    },
+    {
+      "name": "AI & Generative AI",
+      "items": [
+        "LLMs",
+        "RAG",
+        "Agentic AI",
+        "OpenAI APIs",
+        "LangGraph",
+        "Vector Embeddings",
+        "Semantic Search",
+        "AWS Bedrock",
+        "PyTorch",
+        "TensorFlow",
+        "Scikit-learn",
+        "MLOps"
+      ]
+    },
+    {
+      "name": "Backend & Distributed Systems",
+      "items": [
+        "Spring Boot",
+        "FastAPI",
+        "Microservices",
+        "REST APIs",
+        "Event-Driven Architecture",
+        "Asynchronous Processing",
+        "Hibernate",
+        "Spring Data JPA"
+      ]
+    },
+    {
+      "name": "Frontend",
+      "items": [
+        "React.js",
+        "Angular",
+        "TypeScript",
+        "HTML5",
+        "CSS3",
+        "Responsive UI"
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "items": [
+        "AWS",
+        "Amazon S3",
+        "AWS Lambda",
+        "Amazon EC2",
+        "Amazon EKS",
+        "GCP",
+        "Docker",
+        "Kubernetes",
+        "Jenkins",
+        "CI/CD"
+      ]
+    },
+    {
+      "name": "Data & Messaging",
+      "items": [
+        "Apache Kafka",
+        "Data Pipelines",
+        "ETL",
+        "Stream Processing",
+        "MySQL",
+        "PostgreSQL",
+        "Amazon Aurora",
+        "Redis",
+        "Data Modeling",
+        "Query Optimization"
+      ]
+    },
+    {
+      "name": "Testing, Security & Observability",
+      "items": [
+        "JUnit",
+        "Mockito",
+        "TDD",
+        "OAuth 2.0",
+        "JWT",
+        "Secure Coding",
+        "Prometheus",
+        "Grafana",
+        "OpenTelemetry",
+        "Splunk"
+      ]
+    },
+    {
+      "name": "Engineering Practices",
+      "items": [
+        "System Design",
+        "Software Architecture",
+        "Scalability",
+        "High Availability",
+        "Fault Tolerance",
+        "Concurrency",
+        "Git",
+        "Maven",
+        "Agile",
+        "Code Reviews"
+      ]
+    }
+  ]
+}

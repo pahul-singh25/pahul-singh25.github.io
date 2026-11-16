@@ -1,0 +1,113 @@
+{
+  "roles": [
+    {
+      "company": "Eli Lilly",
+      "logo": "assets/images/logos/eli-lilly.svg",
+      "title": "Software Engineer",
+      "start": "Mar 2025",
+      "end": "Present",
+      "location": "USA",
+      "description": "Build data platforms, backend services and production AI workflows for insurance and clinical operations, from serverless ingestion to multi-agent RAG systems.",
+      "highlights": [
+        "Built a serverless ingestion platform on AWS S3, Lambda, Kafka and Python that replaced fragmented vendor onboarding, cutting onboarding time by 80% while processing 20M+ insurance records per day.",
+        "Developed RefundGuard, a Python/FastAPI audit service that analyzed 500K+ insurance records to find overcharges, enabling $2M in customer refunds.",
+        "Built AskX, a multi-agent platform (FastAPI, RAG, SQL agents, classifier routing, fallback orchestrator) for clinical-trial queries: 200K queries per day and an estimated 73% lower resolution cost over 6 months.",
+        "Executed a zero-downtime migration of the configuration database from Aurora MySQL v2 to v3 using blue-green deployment, with cutover in under 10 seconds and zero data loss.",
+        "Developed agentic AI workflows with OpenAI APIs, LangGraph and FastAPI that route requests across retrieval and reasoning components, with fallback handling."
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Java",
+        "Kotlin",
+        "Spring Boot",
+        "AWS Lambda",
+        "Kafka",
+        "RAG",
+        "LangGraph",
+        "OpenAI APIs",
+        "Aurora MySQL",
+        "React"
+      ]
+    },
+    {
+      "company": "Blue Cross Blue Shield",
+      "logo": "assets/images/logos/blue-cross-blue-shield.svg",
+      "title": "Software Engineer",
+      "start": "Sep 2021",
+      "end": "Mar 2025",
+      "description": "Built cloud-native healthcare services and AI-assisted applications, with a focus on reliability, observability and secure service-to-service communication.",
+      "highlights": [
+        "Architected scalable backend services in Java and Spring Boot for cloud-native healthcare workflows, improving modularity, reliability and maintainability.",
+        "Engineered LLM and RAG applications with Python, FastAPI, vector embeddings and semantic search, supporting 10+ enterprise knowledge workflows.",
+        "Built centralized logging and monitoring by integrating Splunk with custom Spring Boot actuators, decreasing mean time to resolution for production incidents by 25%.",
+        "Secured service-to-service communication across internal microservices with OAuth 2.0 and JWT authorization.",
+        "Implemented machine learning pipelines and MLOps workflows with PyTorch and TensorFlow, supporting 5+ model development and deployment workflows."
+      ],
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "Python",
+        "FastAPI",
+        "React.js",
+        "TypeScript",
+        "Docker",
+        "Kubernetes",
+        "Splunk",
+        "OAuth 2.0",
+        "JWT",
+        "PyTorch"
+      ]
+    },
+    {
+      "company": "Isango",
+      "logo": "assets/images/logos/isango.svg",
+      "title": "Software Engineer",
+      "start": "Jul 2018",
+      "end": "May 2019",
+      "location": "India",
+      "description": "Worked on backend services for a travel marketplace, keeping tour pricing and availability current across Australian destinations.",
+      "highlights": [
+        "Developed Java and Spring Boot services to automate activity-data ingestion and synchronization, keeping tour pricing and availability current across Australian destinations.",
+        "Implemented Kafka-based event processing with Redis and MySQL to propagate inventory changes in near real time.",
+        "Integrated AWS services to retrieve, archive and monitor daily tour listings across key Australian cities.",
+        "Integrated Cloudinary as an image manipulation and CDN layer, reducing average page load times by 30%."
+      ],
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "Kafka",
+        "Redis",
+        "MySQL",
+        "AWS",
+        "Cloudinary",
+        "REST APIs"
+      ]
+    },
+    {
+      "company": "Paytm",
+      "logo": "assets/images/logos/paytm.svg",
+      "title": "Software Developer",
+      "start": "May 2017",
+      "end": "Jun 2018",
+      "location": "India",
+      "description": "Developed backend payment-processing components and the APIs that connect them to customer-facing applications.",
+      "highlights": [
+        "Developed backend payment-processing components in Java and Spring-based technologies for transaction and business workflows.",
+        "Engineered C++ components for performance-sensitive application processing in transaction-oriented workloads.",
+        "Built REST APIs and SQL-based data integrations that connect backend services to customer-facing applications.",
+        "Implemented unit and integration tests with JUnit to validate the service layer and reduce regression risk."
+      ],
+      "technologies": [
+        "Java",
+        "Spring",
+        "C++",
+        "REST APIs",
+        "SQL",
+        "JUnit",
+        "Git",
+        "Maven"
+      ]
+    }
+  ]
+}

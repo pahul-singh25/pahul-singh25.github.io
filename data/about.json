@@ -1,0 +1,38 @@
+{
+  "paragraphs": [
+    "I build backend and full-stack systems with Java, Spring Boot, Python and FastAPI. My focus is microservices, distributed systems, REST APIs and event-driven architecture on AWS, Kafka and Kubernetes.",
+    "At Eli Lilly I build serverless data ingestion and production AI systems. These include a platform that processes 20M+ insurance records per day and AskX, a multi-agent RAG platform that handles 200K clinical-trial queries per day.",
+    "Earlier, at Blue Cross Blue Shield, I built cloud-native healthcare services, secured internal microservices with OAuth 2.0 and JWT, and cut incident mean time to resolution by 25% with centralized logging and monitoring.",
+    "My career started in payments at Paytm and travel marketplaces at Isango. I care about reliability, performance and maintainable software that creates measurable business value."
+  ],
+  "highlights": [
+    {
+      "label": "Focus",
+      "value": "Backend, distributed systems, applied AI"
+    },
+    {
+      "label": "Current",
+      "value": "Software Engineer, Eli Lilly"
+    },
+    {
+      "label": "Experience",
+      "value": "6+ years"
+    },
+    {
+      "label": "Base",
+      "value": "Indiana"
+    },
+    {
+      "label": "Degree",
+      "value": "Master's in Computer Science, Northwestern"
+    },
+    {
+      "label": "Core languages",
+      "value": "Java, Python, Kotlin, TypeScript"
+    },
+    {
+      "label": "Industries",
+      "value": "Healthcare, insurance, travel, payments"
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "projects": [
+    {
+      "name": "lsmkv",
+      "category": "Storage engine",
+      "description": "An LSM-tree key-value storage engine in Rust with a checksummed write-ahead log and group commit, SSTables with bloom filters, leveled compaction and MVCC snapshots. A simulated filesystem crashes it at every I/O operation to prove recovery.",
+      "highlights": [
+        "CRC-32C-checked WAL with group commit: one record and one fsync per group of writers.",
+        "SSTables with prefix compression and bloom filters at 10 bits per key; leveled compaction with snapshot-aware version dropping.",
+        "Crash-tested at every single I/O operation through a simulated filesystem."
+      ],
+      "technologies": [
+        "Rust",
+        "LSM tree",
+        "WAL",
+        "SSTables",
+        "MVCC",
+        "Compaction"
+      ],
+      "links": {
+        "source": "https://github.com/pahul-singh25/lsmkv"
+      },
+      "image": "assets/images/projects/lsmkv.svg",
+      "hero": {
+        "src": "assets/images/projects/lsmkv-hero.jpg",
+        "alt": "lsmkv — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "replayagent",
+      "category": "Agent infrastructure",
+      "description": "A single-node durable execution runtime for LLM agents, in the style of Temporal. Every LLM and tool call is an activity recorded in an event-sourced SQLite history, so a new worker can replay the workflow after a crash and run only the unfinished work.",
+      "highlights": [
+        "Zero runtime dependencies: standard library only (sqlite3, threading, urllib).",
+        "Deterministic replay with a determinism checker that parks a workflow as blocked instead of corrupting it.",
+        "Retries with exponential backoff and jitter, durable timers and human-in-the-loop signals."
+      ],
+      "technologies": [
+        "Python",
+        "SQLite",
+        "Event sourcing",
+        "LLM agents",
+        "Durable execution",
+        "CLI"
+      ],
+      "links": {
+        "source": "https://github.com/pahul-singh25/replayagent"
+      },
+      "image": "assets/images/projects/replayagent.svg",
+      "hero": {
+        "src": "assets/images/projects/replayagent-hero.jpg",
+        "alt": "replayagent — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "syncboard",
+      "category": "Local-first apps",
+      "description": "A local-first collaborative kanban board. Offline edits persist in IndexedDB and sync through a WebSocket relay, and Yjs CRDTs merge concurrent edits deterministically across network partitions.",
+      "highlights": [
+        "Concurrent edits converge on every replica instead of being overwritten, including after a split-brain.",
+        "32 unit and conflict-resolution tests plus a Playwright offline/online end-to-end test.",
+        "Live multi-user cursors via Yjs awareness and a Dockerized relay."
+      ],
+      "technologies": [
+        "TypeScript",
+        "React",
+        "Yjs",
+        "IndexedDB",
+        "WebSocket",
+        "Docker"
+      ],
+      "links": {
+        "source": "https://github.com/pahul-singh25/syncboard"
+      },
+      "image": "assets/images/projects/syncboard.svg",
+      "hero": {
+        "src": "assets/images/projects/syncboard-hero.jpg",
+        "alt": "syncboard — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "ratevault",
+      "category": "Insurance systems",
+      "description": "A motor insurance quote engine with bitemporal rate tables, so any past quote can be repriced to the penny using the rates in force at the time. It includes a live browser demo.",
+      "highlights": [
+        "Rate rows carry valid-time and transaction-time ranges and are closed, never updated or deleted; a database trigger rejects overlapping ranges.",
+        "Demo: a quote of GBP 1995.19 stays provable while the backdated-correction answer is GBP 1671.64.",
+        "Deterministic pure pricing function and idempotent quote issuance; twelve tests run in CI."
+      ],
+      "technologies": [
+        "TypeScript",
+        "Node.js",
+        "SQLite",
+        "Bitemporal data",
+        "Triggers"
+      ],
+      "links": {
+        "source": "https://github.com/pahul-singh25/ratevault",
+        "demo": "https://pahul-singh25.github.io/ratevault/"
+      },
+      "image": "assets/images/projects/ratevault.svg",
+      "hero": {
+        "src": "assets/images/projects/ratevault-hero.jpg",
+        "alt": "ratevault — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "permitflow",
+      "category": "Workflow & data integrity",
+      "description": "A municipal permitting workflow where a declared statechart compiles into database constraints and triggers, so illegal status transitions are rejected by the database itself, even for raw SQL.",
+      "highlights": [
+        "One statechart with 11 states and 15 declared transitions drives both enforcement and citizen-facing next-step text.",
+        "Demo swept all 95 illegal pairs: 95 rejected, 0 accepted.",
+        "Append-only history; triggers block rewrites and any move out of a terminal state."
+      ],
+      "technologies": [
+        "TypeScript",
+        "SQLite",
+        "SQL triggers",
+        "Statecharts",
+        "GitHub Pages"
+      ],
+      "links": {
+        "source": "https://github.com/pahul-singh25/permitflow",
+        "demo": "https://pahul-singh25.github.io/permitflow/"
+      },
+      "image": "assets/images/projects/permitflow.svg",
+      "hero": {
+        "src": "assets/images/projects/permitflow-hero.jpg",
+        "alt": "permitflow — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "pickpath",
+      "category": "Offline-first sync",
+      "description": "An offline-first warehouse picking sync core where conflicting picks become supervisor exception tasks instead of silently lost picks. A reservation ledger validates offline actions rather than merging them.",
+      "highlights": [
+        "On 500 contested SKUs the reservation ledger had 0 silent losses; the last-write-wins baseline had 500.",
+        "Idempotent apply keyed by (pickerId, clientSeq): 1000 duplicate submissions recognised with the outcome unchanged.",
+        "Seeded partition simulator makes silent losses a measured count."
+      ],
+      "technologies": [
+        "TypeScript",
+        "Offline queue",
+        "Idempotency",
+        "Simulation",
+        "GitHub Pages"
+      ],
+      "links": {
+        "source": "https://github.com/pahul-singh25/pickpath",
+        "demo": "https://pahul-singh25.github.io/pickpath/"
+      },
+      "image": "assets/images/projects/pickpath.svg",
+      "hero": {
+        "src": "assets/images/projects/pickpath-hero.jpg",
+        "alt": "pickpath — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "rotationchaos",
+      "category": "Security engineering",
+      "description": "A workload-identity lab that issues SPIFFE-style certificates with 60-second lifetimes and injects rotation failures such as CA outage and clock skew, so the rotation path is exercised constantly and every failure is asserted to fail closed.",
+      "highlights": [
+        "Nine scenarios (one steady state, eight failures), each with its expected denial reason written down; all fail-closed scenarios held.",
+        "Steady state: 50,000 requests, 1,666 rotations, 0 failures.",
+        "A fail-open detector flags any request allowed after denial has begun; 15 tests, standard library only."
+      ],
+      "technologies": [
+        "Python",
+        "SPIFFE SVIDs",
+        "mTLS",
+        "HMAC-SHA256",
+        "Chaos testing"
+      ],
+      "links": {
+        "source": "https://github.com/pahul-singh25/rotationchaos"
+      },
+      "image": "assets/images/projects/rotationchaos.svg",
+      "hero": {
+        "src": "assets/images/projects/rotationchaos-hero.jpg",
+        "alt": "rotationchaos — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "provenance-gate",
+      "category": "Supply-chain security",
+      "description": "A SLSA provenance verifier that checks attestations against policy, then rebuilds the artifact and diffs it to prove the binary came from the reviewed source instead of trusting the attestation.",
+      "highlights": [
+        "Rejects with specific reason codes such as DIGEST_MISMATCH, WRONG_BUILDER, REPLAYED and NOT_REPRODUCIBLE.",
+        "A compromised runner with a validly signed attestation is caught only by the rebuild-and-diff step.",
+        "19 tests; Python standard library only, with a browser demo."
+      ],
+      "technologies": [
+        "Python",
+        "SLSA",
+        "in-toto",
+        "HMAC-SHA256",
+        "Reproducible builds"
+      ],
+      "links": {
+        "source": "https://github.com/pahul-singh25/provenance-gate",
+        "demo": "https://pahul-singh25.github.io/provenance-gate/"
+      },
+      "image": "assets/images/projects/provenance-gate.svg",
+      "hero": {
+        "src": "assets/images/projects/provenance-gate-hero.jpg",
+        "alt": "provenance-gate — Concept render",
+        "caption": "Concept render"
+      }
+    },
+    {
+      "name": "reachable",
+      "category": "Security tooling",
+      "description": "A CVE triage tool that checks static call-graph reachability from application entry points to the vulnerable function. It returns reachable, not-reachable or indeterminate, and never a silent \"safe\".",
+      "highlights": [
+        "Dynamic dispatch such as getattr or eval makes any \"not reached\" result indeterminate instead of dropping it.",
+        "Demo: of 8 advisories, 2 reachable, 1 indeterminate and 5 not reachable; one added getattr() shifts the result to 6 indeterminate.",
+        "CI gate and SARIF 2.1.0 output; built on the standard-library ast module."
+      ],
+      "technologies": [
+        "Python",
+        "ast",
+        "Call graphs",
+        "SARIF",
+        "CI gating"
+      ],
+      "links": {
+        "source": "https://github.com/pahul-singh25/reachable"
+      },
+      "image": "assets/images/projects/reachable.svg",
+      "hero": {
+        "src": "assets/images/projects/reachable-hero.jpg",
+        "alt": "reachable — Concept render",
+        "caption": "Concept render"
+      }
+    }
+  ]
+}

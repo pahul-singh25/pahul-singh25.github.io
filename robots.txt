@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pahul-singh25.github.io/sitemap.xml

@@ -1,0 +1,47 @@
+{
+  "name": "Prabhpahul Singh",
+  "title": "Software Engineer: Backend, Distributed Systems & AI",
+  "summary": "Software Engineer with 6+ years of experience building scalable backend and full-stack applications across healthcare, insurance, travel and payments. I work in Java, Spring Boot, Python, React.js and Kafka on cloud platforms, and I ship production AI solutions using LLMs, RAG and agentic workflows.",
+  "location": "Indiana",
+  "readouts": [
+    {
+      "value": "80%",
+      "label": "faster vendor onboarding at Eli Lilly"
+    },
+    {
+      "value": "20M+",
+      "label": "insurance records ingested per day"
+    },
+    {
+      "value": "200K",
+      "label": "AskX clinical-trial queries per day"
+    },
+    {
+      "value": "$2M",
+      "label": "in customer refunds found by RefundGuard"
+    }
+  ],
+  "ctas": [
+    {
+      "label": "View projects",
+      "href": "#projects",
+      "kind": "primary"
+    },
+    {
+      "label": "Résumé",
+      "href": "assets/files/prabhpahul-singh-resume.pdf",
+      "kind": "resume"
+    },
+    {
+      "label": "Get in touch",
+      "href": "#contact",
+      "kind": "secondary"
+    }
+  ],
+  "social": {
+    "github": "https://github.com/pahul-singh25",
+    "linkedin": "https://www.linkedin.com/in/pahulsingh1/",
+    "email": "pahulsinggh@gmail.com",
+    "phone": "2246054915"
+  }
+}
