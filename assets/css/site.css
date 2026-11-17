@@ -112,8 +112,9 @@ dd,dt{margin:0}
 .roles{display:flex;flex-direction:column;border-top:1.5px solid var(--ink)}
 .role{display:grid;grid-template-columns:minmax(0,176px) minmax(0,1fr);gap:28px;padding:32px 0;border-bottom:1px solid rgba(12,32,51,.22);position:relative}
 .role-meta{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
-/* one monogram tile for every employer, so the four read as a set */
-.logo-tile{display:grid;place-items:center;width:168px;height:60px;background:var(--navy);color:var(--paper);font:600 22px/1 var(--display);font-stretch:118%;letter-spacing:.04em;box-shadow:3px 3px 0 var(--signal);margin-bottom:6px}
+/* one navy tile for every employer, logos recolored to paper, so the four read as a set */
+.logo-tile{display:flex;align-items:center;justify-content:center;width:168px;height:60px;padding:11px 18px;background:var(--navy);box-shadow:3px 3px 0 var(--signal);margin-bottom:6px}
+.logo-tile img{width:100%;height:100%;min-width:0;object-fit:contain}
 .role-dates{font:500 13px/1.5 var(--mono);color:var(--ink)}
 .role-loc{font:400 13px/1.5 var(--mono);color:var(--muted);min-height:1.5em}
 .role-current .role-dates{color:var(--signal-ink)}
@@ -261,7 +262,7 @@ dd,dt{margin:0}
 
   /* experience: every highlight and the stack visible, compact rows */
   .role{padding:22px 0;gap:10px}
-  .logo-tile{width:120px;height:44px;font-size:17px;box-shadow:2px 2px 0 var(--signal)}
+  .logo-tile{width:120px;height:44px;padding:8px 12px;box-shadow:2px 2px 0 var(--signal)}
   .role-meta{gap:4px 12px}
   .role-body h3{font-size:1.3rem}
   .role-title{font-size:13.5px}
